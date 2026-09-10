@@ -31,44 +31,47 @@ A clean, minimal todo list app built with **React** and **TypeScript** — add, 
 | Build Tool | Vite |
 | Styling | Tailwind CSS |
 
+> 100% client-side — no backend or server involved.
+
 ---
 
 ## 📂 Project Structure
 
 ```
-frontend/
-├── public/
-│   ├── favicon.svg
-│   └── icons.svg
-├── src/
-│   ├── assets/              # Images and static assets
-│   │   ├── hero.png
-│   │   ├── react.svg
-│   │   └── vite.svg
-│   ├── components/
-│   │   ├── Mycomponents/    # App-specific components
-│   │   │   ├── Body/
-│   │   │   ├── Footer/
-│   │   │   ├── Header/
-│   │   │   ├── Todo.tsx
-│   │   │   ├── TodoHeader.tsx
-│   │   │   ├── TodoBody.tsx
-│   │   │   ├── TodoFooter.tsx
-│   │   │   ├── EditDialog.tsx
-│   │   │   ├── AlertForDelete.tsx
-│   │   │   └── ...
-│   │   └── ui/               # Reusable UI primitives (shadcn/ui)
-│   │       ├── button.tsx
-│   │       ├── dialog.tsx
-│   │       ├── input.tsx
-│   │       └── ...
-│   ├── Context/
-│   │   └── TodoContext.tsx   # Global todo state
-│   ├── lib/
-│   ├── App.tsx
-│   ├── main.tsx
-│   └── index.css
-└── package.json
+todo-list-app/
+└── frontend/
+    ├── public/
+    │   ├── favicon.svg
+    │   └── icons.svg
+    ├── src/
+    │   ├── assets/              # Images and static assets
+    │   │   ├── hero.png
+    │   │   ├── react.svg
+    │   │   └── vite.svg
+    │   ├── components/
+    │   │   ├── Mycomponents/    # App-specific components
+    │   │   │   ├── Body/
+    │   │   │   ├── Footer/
+    │   │   │   ├── Header/
+    │   │   │   ├── Todo.tsx
+    │   │   │   ├── TodoHeader.tsx
+    │   │   │   ├── TodoBody.tsx
+    │   │   │   ├── TodoFooter.tsx
+    │   │   │   ├── EditDialog.tsx
+    │   │   │   ├── AlertForDelete.tsx
+    │   │   │   └── ...
+    │   │   └── ui/               # Reusable UI primitives (shadcn/ui)
+    │   │       ├── button.tsx
+    │   │       ├── dialog.tsx
+    │   │       ├── input.tsx
+    │   │       └── ...
+    │   ├── Context/
+    │   │   └── TodoContext.tsx   # Global todo state
+    │   ├── lib/
+    │   ├── App.tsx
+    │   ├── main.tsx
+    │   └── index.css
+    └── package.json
 ```
 
 ---
@@ -90,7 +93,6 @@ The app runs at `http://localhost:5173` by default.
 
 - [ ] Persist tasks with `localStorage`
 - [ ] Add due dates / priorities
-- [ ] Connect to a backend API for multi-device sync
 
 ---
 
